@@ -31,8 +31,8 @@ namespace Disemvoweler
                 {
                     vowels.Add(input[i]);
                 }
-                //the character at i is a letter but not a vowel add to consonant list
-                else if ("BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz".Contains(input[i]))
+                //the character at i is a letter but not a vowel add to consonant list makes and lower again
+                else if ("bcdfghjklmnpqrstvwxyz".Contains(input.ToLower()[i]))
                 {
                     consonants.Add(input[i]);
                 }
